@@ -2,7 +2,7 @@
 <head>
     <link rel="stylesheet" href="https://cdn.acwing.com/static/jquery-ui-dist/jquery-ui.min.css">
     <script src="https://cdn.acwing.com/static/jquery/js/jquery-3.3.1.min.js"></script>
-    <link rel="stylesheet" href="{% static 'css/game/game.css'%}">
+    <link rel="stylesheet" href="{% static 'css/game.css'%}">
     <script src="{% static 'js/dist/game.js'%}"></script>
 </head>
 
@@ -10,7 +10,8 @@
     <div id="ac_game_123"></div>
     <script>
         $(document).ready(function(){
-            let ac_game = AcGame();
+            let ac_game = new AcGame("acgame_123");
         });
+        console.log("Hello, world!");
     </script>
 </body>
