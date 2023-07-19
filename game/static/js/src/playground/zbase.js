@@ -11,6 +11,9 @@ class AcGamePlayground{
         this.players = [];
         this.players.push(new Player(this, this.width/2, this.height/2, this.height*0.05, "white", this.height*0.2, true))
 
+        for (let i = 0; i < 5; i++){
+            this.players.push(new Player(this, this.width/2, this.height/2, this.height*0.05, "blue", this.height*0.2, false))
+        }
 
         this.start();
     }
